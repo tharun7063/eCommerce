@@ -52,11 +52,11 @@ const Header = () => {
                         </span>
                     );
                 } catch (error) {
-                    setUserLocation('🌍 Location unavailable');
+                    setUserLocation('Location unavailable');
                 }
             },
             () => {
-                setUserLocation('❌ Permission denied');
+                setUserLocation('Permission denied');
             }
         );
     }, []);
